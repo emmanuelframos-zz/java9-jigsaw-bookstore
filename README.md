@@ -1,7 +1,7 @@
 # Java 9 Jigsaw - Bookstore
 A bookstore using Java 9 Jigsaw, HTTP2/Client and Flow API.
 
-##Modules
+## Modules
 * **Domain**: contains domain classes of business core
 * **HTTP**: HTTP client to get books from external service
 * **NF**: invoice issuing service and domain objects
