@@ -1,5 +1,5 @@
-module br.com.bookstore {
-    requires br.com.bookstore.model;
-    requires br.com.bookstore.data;
-    requires br.com.bookstore.service;
+module bookstore.main {
+    requires bookstore.domain;
+    requires bookstore.nf;
+    requires bookstore.http;
 }

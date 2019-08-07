@@ -1,7 +1,7 @@
 package br.com.bookstore;
 
-import br.com.bookstore.data.Books;
-import br.com.bookstore.model.Book;
+import br.com.bookstore.http.Books;
+import br.com.bookstore.domain.Book;
 import br.com.bookstore.service.NFEmissor;
 
 import java.util.List;

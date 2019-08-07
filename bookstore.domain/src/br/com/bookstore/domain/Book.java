@@ -1,4 +1,4 @@
-package br.com.bookstore.model;
+package br.com.bookstore.domain;
 
 import java.util.List;
 

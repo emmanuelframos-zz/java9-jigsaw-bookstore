@@ -1,7 +1,7 @@
-package br.com.bookstore.data;
+package br.com.bookstore.http;
 
-import br.com.bookstore.model.Book;
-import br.com.bookstore.model.Category;
+import br.com.bookstore.domain.Book;
+import br.com.bookstore.domain.Category;
 import jdk.incubator.http.HttpClient;
 import jdk.incubator.http.HttpRequest;
 import jdk.incubator.http.HttpResponse;

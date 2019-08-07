@@ -1,6 +1,6 @@
 package br.com.bookstore.service;
 
-import br.com.bookstore.model.Book;
+import br.com.bookstore.domain.Book;
 import br.com.bookstore.model.NF;
 
 import java.util.concurrent.SubmissionPublisher;
