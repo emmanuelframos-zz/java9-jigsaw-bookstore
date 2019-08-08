@@ -17,8 +17,6 @@ public class NFEmissor {
   public void emit(String clientName, Book book) {
     NF nf = new NF(clientName, book.getName(), 39.99);
     publisher.submit(nf);
-
-    Integer i = 0;
   }
 
   public void close() {

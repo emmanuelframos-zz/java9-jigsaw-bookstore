@@ -11,11 +11,18 @@ import java.util.stream.IntStream;
 
 public class Main {
 
+    private static Integer MB = 1024 * 1024;
+
     private static Consumer<Book> showSimilar = similar -> System.out.println("Talvez você também goste do livro: " + similar.getName());
 
     private static Runnable noSuggestions = () -> System.out.println("Não temos nenhuma sugestão de livro similar no momento");
 
     public static void main(String...args) {
+
+        System.out.println("Memória Máxima JVM   => " + Runtime.getRuntime().maxMemory()/MB + "MB");
+        System.out.println("Memória Total p/ APP => " + Runtime.getRuntime().totalMemory()/MB + "MB");
+        System.out.println("Memória Livre p/ APP => " + Runtime.getRuntime().freeMemory()/MB + "MB");
+        System.out.println("Memória Usada p/ APP => " + (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/MB + "MB");
 
         System.out.println("Lista de livros disponíveis ");
 
@@ -59,3 +66,8 @@ public class Main {
         }
     }
 }
+
+       // Total Memory => 248
+       // Max Memory   => 3952
+       // Free Memory  => 245
+

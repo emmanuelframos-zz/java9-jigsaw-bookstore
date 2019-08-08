@@ -17,7 +17,7 @@ public class Books {
   public static List<Book> all() {
     try {
       String csv = HttpClient.newHttpClient()
-      .send(HttpRequest.newBuilder()
+        .send(HttpRequest.newBuilder()
         .uri(new URI("https://turini.github.io/livro-java-9/books.csv"))
         .GET().build(), 
       HttpResponse.BodyHandler.asString()).body();

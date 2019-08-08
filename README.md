@@ -1,6 +1,12 @@
 # Java 9 Jigsaw - Bookstore
 A bookstore using Java 9 Jigsaw, HTTP2/Client and Flow API.
 
+## Building a custom(small) JRE
+Execute script **scripts/link.sh** in root directory:
+~~~
+bash scripts/link.sh
+~~~
+
 ## Modules
 * **Domain**: contains domain classes of business core
 * **HTTP**: HTTP client to get books from external service
@@ -8,9 +14,15 @@ A bookstore using Java 9 Jigsaw, HTTP2/Client and Flow API.
 * **Main**: executes the entire flow 
 
 ## Building modules
-Execute script **build.sh** in root directory:
+Execute script **scripts/build.sh** in root directory:
 ~~~
-bash build.sh
+bash scripts/build.sh
+~~~
+
+## Packaging modules
+Execute script **scripts/package.sh** in root directory:
+~~~
+bash scripts/package.sh
 ~~~
 
 ## Running

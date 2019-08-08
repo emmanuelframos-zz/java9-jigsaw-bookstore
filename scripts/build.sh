@@ -6,7 +6,6 @@ compile_domain() {
   --module-path mods \
   bookstore.domain/src/module-info.java \
   $(find bookstore.domain/src/br/com/bookstore -name "*.java")
-  echo 'Ok [domain]'
 }
 
 compile_http(){
@@ -15,7 +14,6 @@ compile_http(){
   --module-path mods \
   bookstore.http/src/module-info.java \
   $(find bookstore.http/src/br/com/bookstore -name "*.java")
-  echo 'Ok [http]'
 }
 
 compile_nf(){
@@ -24,7 +22,6 @@ compile_nf(){
   --module-path mods \
   bookstore.nf/src/module-info.java \
   $(find bookstore.nf/src/br/com/bookstore -name "*.java")
-  echo 'Ok [nf]'
 }
 
 compile_main(){
@@ -33,8 +30,12 @@ compile_main(){
   --module-path mods \
   bookstore.main/src/module-info.java \
   $(find bookstore.main/src/br/com/bookstore -name "*.java")
-  echo 'Ok [main]'
 }
+
+echo ""
+echo -e "\e[0;36m======================\e[0m"
+echo -e "\e[0;36mCompiling sources\e[0m"
+echo -e "\e[0;36m======================\e[0m"
 
 compile_domain
 compile_http
