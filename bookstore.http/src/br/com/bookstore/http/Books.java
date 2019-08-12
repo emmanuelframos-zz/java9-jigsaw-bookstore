@@ -16,11 +16,16 @@ public class Books {
 
   public static List<Book> all() {
     try {
+      HttpRequest request = HttpRequest.newBuilder()
+              .uri(new URI("https://turini.github.io/livro-java-9/books.csv"))
+              .GET()
+              .build();
+
+      HttpResponse.BodyHandler<String> bodyHandler = HttpResponse.BodyHandler.asString();
+
       String csv = HttpClient.newHttpClient()
-        .send(HttpRequest.newBuilder()
-        .uri(new URI("https://turini.github.io/livro-java-9/books.csv"))
-        .GET().build(), 
-      HttpResponse.BodyHandler.asString()).body();
+              .send(request, bodyHandler)
+              .body();
 
       return Stream.of(csv.split("\n"))
         .map(Books::create)
